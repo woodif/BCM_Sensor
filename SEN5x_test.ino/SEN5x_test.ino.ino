@@ -159,7 +159,7 @@ void setup() {
     //
     // Adjust tempOffset to account for additional temperature offsets
     // exceeding the SEN module's self heating.
-    float tempOffset = 0.0;
+    float tempOffset = -2.5;
     error = sen5x.setTemperatureOffsetSimple(tempOffset);
     if (error) {
         Serial.print("Error trying to execute setTemperatureOffsetSimple(): ");
